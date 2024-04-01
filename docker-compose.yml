@@ -1,0 +1,10 @@
+version: "3"
+services:
+    web:
+        container_name: mantencion
+        restart: always
+        image: nginx
+        ports:
+            - 7171:80
+        volumes:
+            - ./code:/usr/share/nginx/html
